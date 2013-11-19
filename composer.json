@@ -7,7 +7,9 @@
         }
     ],
     "require": {
-      "symfony/framework-standard-edition": "v2.4.0-BETA2"
+      "symfony/framework-standard-edition": "v2.4.0-BETA2",
+      "doctrine/mongodb-odm": "1.0.*@dev",
+      "doctrine/mongodb-odm-bundle": "3.0.*@dev"
     },
     "minimum-stability": "beta",
     "extra": {
