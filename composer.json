@@ -1,0 +1,18 @@
+{
+    "name": "giannimoschini/php-proxyui-service",
+    "authors": [
+        {
+            "name": "Gianni Moschini",
+            "email": "gianni.moschini@hailocab.com"
+        }
+    ],
+    "require": {
+      "symfony/framework-standard-edition": "v2.4.0-BETA2"
+    },
+    "minimum-stability": "beta",
+    "extra": {
+        "symfony-app-dir": "app",
+        "symfony-web-dir": "www",
+        "symfony-assets-install": "symlink"
+    }
+}
