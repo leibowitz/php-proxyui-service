@@ -22,4 +22,19 @@ class DefaultController extends Controller
         $rs = $dm->findAllOrderedByDate();
         return array('results' => $rs);
     }
+
+    /**
+     * @Route("/info/{id}", name="_info")
+     * @Template()
+     */
+    public function viewAction($id)
+    {
+        $dm = $this
+            ->get('doctrine_mongodb')
+            ->getManager()
+            ->getRepository('AcmeDemoBundle:Log');
+
+        $rs = $dm->find($id);
+        return array('result' => $rs);
+    }
 }

@@ -3,7 +3,7 @@
 {% for row in results %}
     <tr>
         <td>
-        {{ row.request.host }}
+        <a href="{{ path('_info', {id: row.id}) }}">{{ row.request.host }}</a>
         {{ row.request.path }}
         </td>
         <td>
