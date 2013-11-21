@@ -12,9 +12,7 @@
       "doctrine/mongodb-odm-bundle": "3.0.*@dev"
     },
     "minimum-stability": "beta",
-    "extra": {
-        "symfony-app-dir": "app",
-        "symfony-web-dir": "www",
-        "symfony-assets-install": "symlink"
+    "autoload": {
+        "psr-0": { "": "src/" }
     }
 }

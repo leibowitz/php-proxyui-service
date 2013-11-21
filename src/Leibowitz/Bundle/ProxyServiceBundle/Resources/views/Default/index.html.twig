@@ -1,0 +1,13 @@
+
+<table>
+{% for row in results %}
+    <tr>
+        <td>
+        {{ row.request.host }}
+        {{ row.request.path }}
+        </td>
+        <td>
+        </td>
+    </tr>
+{% endfor %}
+</table>

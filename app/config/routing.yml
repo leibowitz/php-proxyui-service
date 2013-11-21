@@ -1,0 +1,5 @@
+leibowitz_proxy_service:
+    resource: "@LeibowitzProxyServiceBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
