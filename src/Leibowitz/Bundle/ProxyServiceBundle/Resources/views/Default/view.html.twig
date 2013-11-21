@@ -1,5 +1,29 @@
 
-{{ result.request.host }}
-{{ result.request.path }}
-{{ result.request.body }}
-{{ result.response.body }}
+<pre>
+Host: {{ result.request.host }}
+Path: {{ result.request.path }}
+</pre>
+{{ (result.request.time*1000)|number_format }}ms
+
+<h2>Request</h2>
+<h3>Headers</h3>
+<pre>
+{% for key, values in result.request.headers %}
+    {{ key }}: {% for value in values %}{{ value }}{% endfor %}<br />
+{% endfor %}
+</pre>
+<h3>Body</h3>
+<div style="overflow:scroll">
+<pre>{{ result.request.body }}</pre>
+</div>
+<h2>Response</h2>
+<h3>Headers</h3>
+<pre>
+{% for key, values in result.response.headers %}
+    {{ key }}: {% for value in values %}{{ value }}{% endfor %}<br />
+{% endfor %}
+</pre>
+<h3>Body</h3>
+<div style="overflow:scroll">
+<pre>{{ result.response.body }}</pre>
+</div>
